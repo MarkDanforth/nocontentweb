@@ -1,0 +1,6 @@
+<div class="blog-outer" *ngFor="let blog of blogs">
+  {{ blog.title ? blog.title : '' }}<br />
+  <img *ngFor="let image of blog.images" [src]="image">
+  <div [innerHtml]="blog.body">{{ blog.body }}</div>
+  {{ blog.publishDate }}
+</div>

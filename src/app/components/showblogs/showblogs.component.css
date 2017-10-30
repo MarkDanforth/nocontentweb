@@ -1,0 +1,7 @@
+.blog-outer {
+    width: 400px;
+}
+
+.blog-outer img {
+    width: inherit
+}

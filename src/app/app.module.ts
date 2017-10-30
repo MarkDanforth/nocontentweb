@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { TestComponentComponent } from './components/test-component/test-component.component';
 
 import { FunctionTestService } from './services/function-test.service';
+import { BlogsService } from './services/blogs.service';
+import { ShowblogsComponent } from './components/showblogs/showblogs.component';
 
 @NgModule({
     declarations: [
         AppComponent,
-        TestComponentComponent
+        TestComponentComponent,
+        ShowblogsComponent
     ],
     imports: [
         BrowserModule,
         HttpModule
     ],
     providers: [
-        FunctionTestService
+        FunctionTestService,
+        BlogsService
     ],
     bootstrap: [AppComponent]
 })
